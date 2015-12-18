@@ -179,6 +179,23 @@ RENDERING WIDTH (360/480 for most Android phones in portrait)<br/>
 <input id="renderWidth" type="text" value="360"><br><br>
 HTML SOURCE<br/>
 <textarea id="templateArea" rows="30" cols="40" style="width: 100%">
+
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;body&gt;
+&lt;!-- change the following from 200 to 500 too see the results. When your email IS large Gmail tries to make it narrow by adding a "munged" class to your elements (tables, img, divs). This class add styles to break your table --&gt;
+&lt;table width="500"&gt;&lt;tr&gt;&lt;td&gt;ciao&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+
+&lt;!-- the following blocks are 100px wide, but gmail break them to make 100% (when there is something in the email larger than its viewport --&gt;
+&lt;table align="left" width="100" bgcolor="#800000"&gt;&lt;tr&gt;&lt;td&gt;lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor &lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;table align="left" width="100" bgcolor="#808000"&gt;&lt;tr&gt;&lt;td&gt;lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor &lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;table align="left" width="100" bgcolor="#800080"&gt;&lt;tr&gt;&lt;td&gt;lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor &lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;table align="left" width="100" bgcolor="#008000"&gt;&lt;tr&gt;&lt;td&gt;lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor &lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;table align="left" width="100" bgcolor="#008080"&gt;&lt;tr&gt;&lt;td&gt;lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor &lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;table align="left" width="100" bgcolor="#000080"&gt;&lt;tr&gt;&lt;td&gt;lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor &lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+
 </textarea><br><br>
 <button onClick="emulate();">EMULATE</button>
 </td>
