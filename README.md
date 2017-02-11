@@ -1,3 +1,7 @@
+### Update 2016/10
+
+Gmail updated the Gmail App so this may not apply to the latest version. We didn't check.
+
 # android-gmail-emulator
 An hack to simulate the rendering by the Gmail App for Android in a simple browser
 
